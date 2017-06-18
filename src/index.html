@@ -10,22 +10,20 @@
 
 <body ng-app = 'app'>
 
-  <div ng-controller = 'IndexController as vm'>
-    <div class = 'container'>
-    </div>
-    <h1 id = 'yes'>{{vm.hello}}</h1><button class = 'btn btn-primary'>Hi</button>
-    <input type = 'text' ng-model = 'vm.hello'></input>
+  <div ui-view>
   </div>
 
 
 
 
 <script type = 'text/javascript' src = 'script/angular.js'></script>
+<script type = 'text/javascript' src = 'script/angular-ui-router.js'></script>
 <script
   src="https://code.jquery.com/jquery-3.2.1.min.js"
   integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
   crossorigin="anonymous"></script>
 <script src = 'index.module.js'></script>
+<script src = 'index-route/index.route.js'></script>
 <script src = 'index-controller/index.controller.js'></script>
 </body>
 
